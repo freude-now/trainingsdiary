@@ -1,0 +1,20 @@
+CREATE TABLE trainings (
+                          "id" UUID NOT NULL PRIMARY KEY,
+                          "user_id" int4,
+                          "sport_id" int4,
+                          "sport_level_id" int4,
+                          "course_name_id" int4,
+                          "time_total" float8,
+                          "distance_total" float8,
+                          "map_data" text,
+                          "filename" text,
+                          "created_at" timestamp,
+                          "updated_at" timestamp,
+                          "start_time" timestamp,
+                          "heartrate" text,
+                          "height" text,
+                          "comment" text,
+                          "heartrate_avg" int4,
+                          "heartrate_max" int4,
+                          "calories" int4
+);

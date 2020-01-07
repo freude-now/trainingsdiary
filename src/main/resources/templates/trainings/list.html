@@ -1,0 +1,27 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Library - Available Trainings</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Available Books</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--/*@thymesVar id="trainings" type="java"*/-->
+    <tr th:each="training: ${trainings}">
+        <td th:text="${training.id}">Title</td>
+        <td th:text="${training.comment}">Authors</td> <td>
+
+    </td> </tr>
+    </tbody>
+</table>
+</body>
+</html>
